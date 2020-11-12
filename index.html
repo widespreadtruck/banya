@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Русская Баня на Сухой Самарке</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Philosopher&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <span id="closeBtn" class="closeBtn">&times;</span>
+            <h2>Забрнировать баню</h2>
+            <p>Оставьте нам заявку, и мы свяжемся с Вами в течение 30 минут</p>
+            <form action="">
+                <label class="visually-hidden" for="name">Фамилия, Имя</label>
+                <input placeholder="Фамилия, Имя" type="text" name="name" id="name">
+                <label class="visually-hidden" for="cellNum">Номер телефона</label>
+                <input placeholder="Номер телефона" type="tel" name="cellNum" id="cellNum">
+            </form>
+            <button>Заказать звонок</button>
+        </div>
+    </div>
+    <div id="hero-slider">
+        <div id="logo" class="mask">
+            <img class="logo-text masked" src="./assets/img//logo.png" alt="Логотип Бани на Сухой Самарке">
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="tel:+79677671855">8 967-767-18-55</a></li>
+                <li id="bookBtn" class="bookBtn"><a>Забронировать</a></li>
+                <li><a>Фото</a></li>
+                <li><a>Цены</a></li>
+                <li><a>О Нас</a></li>
+                <li><a>Отзывы</a></li>
+                <li><a>Контакты</a></li>
+            </ul>
+        </nav>
+        <div id="slideshow">
+            <div id="slides-main" class="slides">
+                <div class="slide" data-index="0">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="1">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="2">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/3.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="3">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/4.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="slides-aux" class="slides mask">
+                <h2 class="slide-title slide" data-index="0"><a href="#">#БанькаНаСухойСамарке</a></h2>
+                <h2 class="slide-title slide" data-index="1"><a href="#">#ДобрыеДрузья</a></h2>
+                <h2 class="slide-title slide" data-index="2"><a href="#">#ГорячийПар</a></h2>
+                <h2 class="slide-title slide" data-index="3"><a href="#">#ХолодноеПиво</a></h2>
+            </div>
+        </div>
+
+
+        <!-- <div id="info">
+            <div class="slider-title-wrapper">
+                <span class="line"></span>
+                <h1 class="slider-title">
+                    <span>Projects</span>
+                </h1>
+            </div>
+            <div class="about">
+                <p>
+                    A pure CSS/JS slider layout<br/>
+                    Developed for Toptal engineering blog<br/>
+                    by <a href="http://stefan.lynxdev.io" target="_blank">Stefan V</a>,
+                    repo on <a href="https://github.com/vitass/pure-css-js-slider" target="_blank">Github</a>
+                </p>
+            </div>
+        </div> -->
+
+
+        <nav id="slider-nav">
+            <span class="current">01</span>
+            <span class="sep"></span>
+            <span class="total">04</span>
+        </nav>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
