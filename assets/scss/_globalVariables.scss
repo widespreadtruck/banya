@@ -1,0 +1,40 @@
+$main-font: 'Muli', sans-serif;
+$secondary-font: 'Forum', cursive;
+$third-font: 'Philosopher', sans-serif;
+$offset: 2rem;
+$dark-color: #030303;
+$white-color: whitesmoke;
+$soft-color: #EED39B;
+$secondary-color: #576927;
+$hover-color: #eeb43f;
+
+// $main-width: 80%;
+// $side-width: 100% - $main-width;
+
+$nav-size: 130px;
+$title-size: 9vmax;
+$easing: cubic-bezier(.694, 0, .335, 1);
+$heading-margin-top: 6rem;
+
+// @font-face {
+//     font-family: headingFont;
+//     src: url(../fonts/CyrillicOld.ttf);
+// }
+
+@mixin bor {
+    border: 1px solid red;
+}
+
+@mixin flexHor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexVer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

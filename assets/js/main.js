@@ -257,27 +257,29 @@ window.addEventListener("resize", heroSlider().resize);
 // Modal functions START
 // ***************************
 // Get the modal
-const myModal = document.getElementById('myModal');
-// Get modal-content
-const modalContent = document.getElementById('modal-content');
-// Get the button that opens the modal
-const bookBtn = document.getElementById('bookBtn');
-// Get the <div> element that closes the modal
-const closeBtn = document.getElementById('closeBtn');
-// When the user clicks on the button, open the modal 
-bookBtn.onclick = function() {
-    myModal.style.display = 'block';
-};
-// When the user clicks on <div> (x), close the modal
-closeBtn.onclick = function() {
-    myModal.style.display = 'none';
-};
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == myModal) {
-        myModal.style.display = 'none';
-    }
-};
+
+// const myModal = document.getElementById('myModal');
+// // Get modal-content
+// const modalContent = document.getElementById('modal-content');
+// // Get the button that opens the modal
+// const bookBtn = document.getElementById('bookBtn');
+// // Get the <div> element that closes the modal
+// const closeBtn = document.getElementById('closeBtn');
+// // When the user clicks on the button, open the modal 
+// bookBtn.onclick = function() {
+//     myModal.style.display = 'block';
+// };
+// // When the user clicks on <div> (x), close the modal
+// closeBtn.onclick = function() {
+//     myModal.style.display = 'none';
+// };
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == myModal) {
+//         myModal.style.display = 'none';
+//     }
+// };
+
 // ***************************
 // Modal functions END
 // ***************************
