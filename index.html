@@ -68,33 +68,34 @@
         </nav>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="wrapper">
+        <h2>Галлерея</h2>
         <div class="gallery">
             <figure class="gallery__item gallery__item--1">
                 <iframe class="gallery__img" src="https://www.youtube.com/embed/8OxLGWOLQj8?vq=hd1080&modestbranding=1&showinfo=0&rel=0" width="400" height="265" frameborder="0" >
                 </iframe>
             </figure>
             <figure class="gallery__item gallery__item--2">
-                <img src="./assets/img/gallery/thumbnails/gallery2.jpg" class="gallery__img" alt="Image 2" onclick="openModal();currentSlide(1)">
+                <img src="./assets/img/gallery/gallery2.jpg" class="gallery__img" alt="Image 2" onclick="openModal();currentSlide(1)">
             </figure>
             <figure class="gallery__item gallery__item--3">
-                <img src="./assets/img/gallery/thumbnails/gallery3.jpg" class="gallery__img" alt="Image 3"
+                <img src="./assets/img/gallery/gallery3.jpg" class="gallery__img" alt="Image 3"
                 onclick="openModal();currentSlide(2)">
             </figure>
             <figure class="gallery__item gallery__item--4">
-                <img src="./assets/img/gallery/thumbnails/gallery4.jpg" class="gallery__img" alt="Image 4" onclick="openModal();currentSlide(3)">
+                <img src="./assets/img/gallery/gallery4.jpg" class="gallery__img" alt="Image 4" onclick="openModal();currentSlide(3)">
             </figure>
             <figure class="gallery__item gallery__item--5">
-                <img src="./assets/img/gallery/thumbnails/gallery5.jpg" class="gallery__img" alt="Image 5" onclick="openModal();currentSlide(4)">
+                <img src="./assets/img/gallery/gallery5.jpg" class="gallery__img" alt="Image 5" onclick="openModal();currentSlide(4)">
             </figure>
             <figure class="gallery__item gallery__item--6">
                 <img src="./assets/img/gallery/gallery6.jpg" class="gallery__img" alt="Image 6" onclick="openModal();currentSlide(5)">
             </figure>
             <figure class="gallery__item gallery__item--7">
-                <img src="./assets/img/gallery/thumbnails/gallery7.jpg" class="gallery__img" alt="Image 7" onclick="openModal();currentSlide(6)">
+                <img src="./assets/img/gallery/gallery7.jpg" class="gallery__img" alt="Image 7" onclick="openModal();currentSlide(6)">
             </figure>
             <figure class="gallery__item gallery__item--8">
-                <img src="./assets/img/gallery/thumbnails/gallery8.jpg" class="gallery__img" alt="Image 8" onclick="openModal();currentSlide(9)">
+                <img src="./assets/img/gallery/gallery8.jpg" class="gallery__img" alt="Image 8" onclick="openModal();currentSlide(9)">
             </figure>
         </div>
 
@@ -161,13 +162,40 @@
         </div>
         <!-- The Modal/Lightbox ends-->
     </section>
+    <section id="map" class="wrapper">
+        <h2>Как нас найти</h2>
+        <div class="map_container">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A211fcc938af58b4f0a3ba2d31723634a30d75d1e90cd32d65c6576c49eae58a3&amp;source=constructor"
+                width="700" height="450" frameborder="0">
+            </iframe>
+            <div class="infoContainer">
+                <div class="infoContainer_block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>г.Самара, р-н Сухая Самарка, ул. Западная 60</p>
+                </div>
+                <div class="infoContainer_block">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Все вопросы по телефону 8 <a href="tel:+7-967-767-1855">967-767-18-55</a>
+                    <br>
+                    Предварительная заявка обязательна</p>
+                </div>
+                <div class="infoContainer_block">
+                    <i class="far fa-clock"></i>
+                    <p>Режим работы: с 8.00 до 24.00.
+                    <br>
+                    Без выходных</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
 
 
-
+    <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,11 @@
-// #gallery {
-//     background-color: $soft-color;
-// }
+#gallery {
+    @include flexVer;
+    margin-top: $offset;
+
+    h2 {
+        @include sectionHeading;
+    }
+}
 
 .gallery {
     display: grid;
@@ -8,7 +13,8 @@
     // grid-template-rows: repeat(16, 6vh);
     grid-template-rows: repeat(16, 3.6vw);
     grid-gap: 10px;
-    margin: $offset;
+    // margin-top: $offset;
+    // padding: $offset 0;
 }
 
 .gallery__item {

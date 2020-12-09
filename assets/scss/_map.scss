@@ -1,0 +1,38 @@
+#map {
+    // padding: $offset 0;
+    @include flexVer;
+    
+    h2 {
+        @include sectionHeading;
+    }
+}
+
+.map_container {
+    @include flexHor;
+    
+    iframe {
+        flex: 1 1 auto;
+    }
+}
+
+.infoContainer {
+    flex: 1 1 50%;
+    padding: $offset;
+    padding-right: 0;
+    font-size: 1.8vw;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: $secondary-font;
+}
+
+.infoContainer_block {
+    @include flexHor;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    
+    i {
+        margin-right: 10px;
+        min-width: 26px;
+    }
+}
