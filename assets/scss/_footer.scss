@@ -1,0 +1,46 @@
+footer {
+    background-color: #211D16;
+    // height: 200px;
+    color: whitesmoke;
+    font-family: $forth-font;
+    padding-top: $double-offset;
+    padding-bottom: $double-offset;
+    @include flexVer;
+    
+    .socialMedia-container {
+        @include flexHor;
+        margin-bottom: $offset;
+    
+        li {
+            width: 50px;
+            height: 50px;
+            margin: 1rem;
+        }
+    }
+
+    .socialMedia-cellphone {
+        font-size: 1.3rem;
+        margin-bottom: $offset;
+    }
+
+    .socialMedia-nav {
+        @include flexHor;
+        margin-bottom: $offset;
+        font-size: 1.3rem;
+        font-family: $forth-font;
+        font-weight: 300;
+        cursor: pointer;
+        
+        li {
+            margin: 0 $offset;
+        }
+    }
+
+    .copyright {
+        font-size: 1rem;
+        font-family: $main-font;
+    
+    }
+}
+
+

@@ -1,0 +1,35 @@
+#booking {
+    @include flexHor;
+
+    // h2 {
+    //     @include sectionHeading;
+    // }
+}
+
+// .booking-cellphone {
+//     font-size: 1.3rem;
+//     margin-bottom: $offset;
+// }
+
+// .booking-container {
+//     @include flexHor;
+//     margin-bottom: $offset;
+
+// }
+
+.booking-LeftContainer {
+    @include flexVer;
+    flex: 1 1 50%;
+}
+
+.booking-RightContainer {
+    @include flexVer;
+    flex: 1 1 50%;
+    
+    li {
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+    }
+}
+

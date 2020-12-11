@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Philosopher&display=swap" rel="stylesheet">
-    <link href="https://allfont.net/allfont.css?fonts=cyrillicold" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://allfont.net/allfont.css?fonts=cyrillicold" rel="stylesheet" type="text/css" /> -->
+    <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
@@ -21,18 +22,18 @@
         </div>
         <nav id="navigation">
             <ul>
-                <li><a href="tel:+79677671855">8 967-767-18-55</a></li>
-                <li><a>Фото</a></li>
-                <li><a>Цены</a></li>
-                <li><a>О Нас</a></li>
-                <li><a>Отзывы</a></li>
-                <li><a>Контакты</a></li>
+                <li class="navigation_cellphone"><a href="tel:+79677671855">8-967-767-18-55</a></li>
+                <li><a href="#gallery">Фото</a></li>
+                <li><a href="#pricing">Цены</a></li>
+                <li><a href="#map">Карта проезда</a></li>
+                <!-- <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li> -->
             </ul>
         </nav>
         
         <div id="slideshow">
             <div id="slides-main" class="slides">
-                <div class="slide" data-index="0">
+                <!-- <div class="slide" data-index="0">
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/1.jpg)"></div>
                     </div>
@@ -51,7 +52,7 @@
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/4.jpg)"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="slides-aux" class="slides mask">
                 <h2 class="slide-title slide" data-index="0"><a href="#">#БанькаНаСухойСамарке</a></h2>
@@ -162,6 +163,32 @@
         </div>
         <!-- The Modal/Lightbox ends-->
     </section>
+
+    <section id="pricing">
+        <h2>Прайс лист</h2>
+        <div class="cards-container">
+            <div class="pricing_card">
+                <div class="pricing_card__imgBox">
+                    <img src="./assets/img/cardImg4.jpg" alt="">
+                </div>
+                <p>Понедельник-Воскресенье</p>
+                <p class="priceTag">1500 р/час</p>
+                <p>Минимальное время <br> бронирования - 3 часа</p>
+                <p>Вместимость до 8 человек</p>
+            </div>
+            <div class="pricing_card">
+                <div class="pricing_card__imgBox" >
+                    <img class="opacity" src="./assets/img/med.jpeg" alt="">
+                </div>
+                <p>Праздничные дни*</p>
+                <p class="priceTag">2000 р/час</p>
+                <p>Минимальное время <br> бронирования - 3 часа</p>
+                <p>Вместимость до 8 человек</p>
+            </div>
+        </div>
+        <p class="pricing-note">*Новогодние праздничные дни: 30 Декабря - 10 Января</p>
+    </section>
+
     <section id="map" class="wrapper">
         <h2>Как нас найти</h2>
         <div class="map_container">
@@ -176,26 +203,54 @@
                 </div>
                 <div class="infoContainer_block">
                     <i class="fas fa-mobile-alt"></i>
-                    <p>Все вопросы по телефону 8 <a href="tel:+7-967-767-1855">967-767-18-55</a>
-                    <br>
-                    Предварительная заявка обязательна</p>
+                    <p>Все вопросы по телефону <a href="tel:+7-967-767-1855">+7-967-767-1855</a>
+                        <br>
+                        Предварительная заявка обязательна</p>
                 </div>
                 <div class="infoContainer_block">
                     <i class="far fa-clock"></i>
                     <p>Режим работы: с 8.00 до 24.00.
-                    <br>
-                    Без выходных</p>
+                        <br>
+                        Без выходных</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="booking">
+        <div class="booking-LeftContainer">
+            <h2>Контакты</h2>
+
+            <p>Свяжитесь с нами любым удобным для вас способом</p>
+        </div>
+        
+        <div class="booking-RightContainer">
+            <p class="booking-cellphone">Забронировать Баню на Воде можно по телефону: <a href="tel:+79677671855">8-967-767-18-55</a></p>
+
+            <li><a title="WhatsApp" href="https://wa.me/+79677671855"><img src="./assets/img/social/WhatsApp.png" alt=""> WhatsApp</a></li>
+            <li><a title="Viber" href="viber://add?number=%2B79677671855"><img src="./assets/img/social/Viber.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/banya163/"><img src="./assets/img/social/Instagram.png" alt="Instagram link to profile of @banya163"></a></li>
+        </div>
+    </section>
+
+    <footer>
+        <!-- <div class="socialMedia-container">
+            <li><a title="WhatsApp" href="https://wa.me/+79677671855"><img src="./assets/img/social/WhatsApp.png" alt=""></a></li>
+            <li><a title="Viber" href="viber://add?number=%2B79677671855"><img src="./assets/img/social/Viber.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/banya163/"><img src="./assets/img/social/Instagram.png" alt="Instagram link to profile of @banya163"></a></li>
+        </div> -->
+        <p class="socialMedia-cellphone">Забронировать Баню на Воде можно по телефону: <a href="tel:+79677671855">8-967-767-18-55</a></p>
+        <ul class="socialMedia-nav">
+            <li><a href="">Фото</a></li>
+            <li><a href="">Цены</a></li>
+            <li><a href="">Карта проезда</a></li>
+        </ul>
+        <p class="copyright">Copyright <a href="nikitaguliaev.com">nikitaguliaev.com</a></p>
+    </footer>
 
 
 
 
-
-    <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

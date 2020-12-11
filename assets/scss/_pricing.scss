@@ -1,0 +1,63 @@
+#pricing {
+    @include flexVer;
+    background-image: url(../img/book-time-bg.png);
+    // background-repeat: repeat;
+    // background-position: center;
+    background-size: cover;
+
+    h2 {
+        @include sectionHeading;
+        margin-top: $double-offset;
+    }
+}
+
+.cards-container {
+    @include flexHor;
+}
+
+.pricing_card {
+    @include flexVer;
+    width: 80%;
+    max-width: 330px;
+    margin: 0 $offset;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 15px;
+    background-color: $soft-color;
+
+    &__imgBox {
+        height: 150px;
+        width: 100%;
+        
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .opacity {
+            opacity: 0.8;
+        }
+    }
+
+
+    p {
+        padding: 1rem 1.5rem;
+
+    }
+
+    .priceTag {
+        font-size: 4vw;
+        
+    }
+}
+
+.pricing-note {
+    margin-top: $double-offset;
+    margin-bottom: $triple-offset;
+}
+
+

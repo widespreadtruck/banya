@@ -1,6 +1,7 @@
 #map {
-    // padding: $offset 0;
     @include flexVer;
+    margin-top: $double-offset;
+    margin-bottom: $triple-offset;
     
     h2 {
         @include sectionHeading;
@@ -19,10 +20,6 @@
     flex: 1 1 50%;
     padding: $offset;
     padding-right: 0;
-    font-size: 1.8vw;
-    font-weight: 400;
-    line-height: 1.3;
-    font-family: $secondary-font;
 }
 
 .infoContainer_block {

@@ -1,6 +1,7 @@
 #gallery {
     @include flexVer;
-    margin-top: $offset;
+    margin-top: $triple-offset;
+    margin-bottom: $triple-offset;
 
     h2 {
         @include sectionHeading;
