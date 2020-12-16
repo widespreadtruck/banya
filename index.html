@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Русская Баня на Сухой Самарке</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Philosopher&display=swap" rel="stylesheet">
-    <!-- <link href="https://allfont.net/allfont.css?fonts=cyrillicold" rel="stylesheet" type="text/css" /> -->
     <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -34,7 +33,7 @@
         
         <div id="slideshow">
             <div id="slides-main" class="slides">
-                <!-- <div class="slide" data-index="0">
+                <div class="slide" data-index="0">
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/1.jpg)"></div>
                     </div>
@@ -53,7 +52,7 @@
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/4.jpg)"></div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div id="slides-aux" class="slides mask">
                 <h2 class="slide-title slide" data-index="0"><a href="#">#БанькаНаСухойСамарке</a></h2>
@@ -71,7 +70,7 @@
     </section>
 
     <section id="gallery" class="wrapper">
-        <h2>Галлерея</h2>
+        <!-- <h2>Галлерея</h2> -->
         <div class="gallery">
             <figure class="gallery__item gallery__item--1">
                 <iframe class="gallery__img" src="https://www.youtube.com/embed/8OxLGWOLQj8?vq=hd1080&modestbranding=1&showinfo=0&rel=0" width="400" height="265" frameborder="0" >
@@ -166,23 +165,23 @@
     </section>
 
     <section id="pricing">
-        <h2>Прайс лист</h2>
+        <h2>ВЫБЕРИТЕ УДОБНОЕ ДЛЯ ВАС ВРЕМЯ</h2>
         <div class="cards-container">
-            <div class="pricing_card">
+            <div class="pricing_card" data-aos="zoom-out-down">
                 <div class="pricing_card__imgBox">
                     <img src="./assets/img/cardImg4.jpg" alt="">
                 </div>
-                <p>Понедельник-Воскресенье</p>
-                <p class="priceTag">1500 р/час</p>
+                <p class="pricing_card__title">Понедельник-Воскресенье</p>
+                <p class="pricing_card__priceTag">1500 р/час</p>
                 <p>Минимальное время <br> бронирования - 3 часа</p>
                 <p>Вместимость до 8 человек</p>
             </div>
-            <div class="pricing_card">
+            <div class="pricing_card" data-aos="zoom-out-down">
                 <div class="pricing_card__imgBox" >
                     <img class="opacity" src="./assets/img/med.jpeg" alt="">
                 </div>
-                <p>Праздничные дни*</p>
-                <p class="priceTag">2000 р/час</p>
+                <p class="pricing_card__title">Праздничные дни*</p>
+                <p class="pricing_card__priceTag">2000 р/час</p>
                 <p>Минимальное время <br> бронирования - 3 часа</p>
                 <p>Вместимость до 8 человек</p>
             </div>
@@ -288,7 +287,7 @@
             <li><a title="Viber" href="viber://add?number=%2B79677671855"><img src="./assets/img/social/Viber.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/banya163/"><img src="./assets/img/social/Instagram.png" alt="Instagram link to profile of @banya163"></a></li>
         </div> -->
-        <p class="socialMedia-cellphone">Тел: <a href="tel:+79677671855">8-967-767-18-55</a></p>
+        <!-- <p class="socialMedia-cellphone">Тел: <a href="tel:+79677671855">8-967-767-18-55</a></p> -->
         <ul class="socialMedia-nav">
             <li><a href="#gallery">Фото</a></li>
             <li><a href="#pricing">Цены</a></li>
@@ -301,7 +300,11 @@
 
 
 
-
     <script src="./assets/js/main.js"></script>
+    <!-- initialize AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

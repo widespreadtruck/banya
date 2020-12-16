@@ -1,5 +1,3 @@
-@import url(https://allfont.ru/allfont.css?fonts=cyrillicold);
-@import url(https://allfont.ru/allfont.css?fonts=izhitsa-cyrillic);
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -184,6 +182,10 @@ textarea {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+@font-face {
+  font-family: 'izhitsaCyrillic';
+  src: url("../fonts/izhitsa-cyrillic_[allfont.ru].ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -343,7 +345,7 @@ p {
       margin-left: 2rem;
       font-size: 1.3rem;
       text-transform: uppercase;
-      font-family: "Izhitsa Cyrillic", arial;
+      font-family: "izhitsaCyrillic", arial;
       font-weight: 300;
       cursor: pointer;
       height: 45px;
@@ -625,16 +627,18 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 6rem;
-  margin-bottom: 6rem; }
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
   #gallery h2 {
-    font-size: 3.5vw;
+    font-size: 6vmin;
     font-weight: 700;
     line-height: 1.5;
     color: #004d00;
-    font-family: "Izhitsa Cyrillic", arial;
+    font-family: "izhitsaCyrillic", arial;
     text-shadow: 4px 4px 4px #aaa;
-    margin-bottom: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase; }
 
 .gallery {
   display: -ms-grid;
@@ -645,7 +649,9 @@ p {
   grid-template-rows: repeat(16, 4.5vh);
   grid-gap: 10px;
   padding-left: 6rem;
-  padding-right: 6rem; }
+  padding-right: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .gallery__item {
   cursor: pointer; }
@@ -898,16 +904,18 @@ img.demo {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 6rem; }
   #map h2 {
-    font-size: 3.5vw;
+    font-size: 6vmin;
     font-weight: 700;
     line-height: 1.5;
     color: #004d00;
-    font-family: "Izhitsa Cyrillic", arial;
+    font-family: "izhitsaCyrillic", arial;
     text-shadow: 4px 4px 4px #aaa;
-    margin-bottom: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase; }
 
 .map_container {
   display: -webkit-box;
@@ -985,14 +993,17 @@ img.demo {
   background-image: url(../img/book-time-bg.png);
   background-size: cover; }
   #pricing h2 {
-    font-size: 3.5vw;
+    font-size: 6vmin;
     font-weight: 700;
     line-height: 1.5;
     color: #004d00;
-    font-family: "Izhitsa Cyrillic", arial;
+    font-family: "izhitsaCyrillic", arial;
     text-shadow: 4px 4px 4px #aaa;
+    margin-top: 4rem;
     margin-bottom: 4rem;
-    margin-top: 4rem; }
+    text-transform: uppercase;
+    margin-top: 6rem;
+    margin-bottom: 2rem; }
 
 .cards-container {
   display: -webkit-box;
@@ -1025,7 +1036,7 @@ img.demo {
   align-items: center;
   width: 80%;
   max-width: 330px;
-  margin: 0 2rem;
+  margin: 2rem;
   text-align: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -1046,11 +1057,13 @@ img.demo {
       opacity: 0.8; }
   .pricing_card p {
     padding: 1rem 1.5rem; }
-  .pricing_card .priceTag {
+  .pricing_card__priceTag {
     font-size: 6vmin; }
+  .pricing_card__title {
+    font-weight: 700; }
 
 .pricing-note {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
   font-size: 1.4rem; }
 
@@ -1071,13 +1084,15 @@ img.demo {
   margin-top: 4rem;
   margin-bottom: 6rem; }
   #booking h2 {
-    font-size: 3.5vw;
+    font-size: 6vmin;
     font-weight: 700;
     line-height: 1.5;
     color: #004d00;
-    font-family: "Izhitsa Cyrillic", arial;
+    font-family: "izhitsaCyrillic", arial;
     text-shadow: 4px 4px 4px #aaa;
-    margin-bottom: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase; }
 
 .booking-Container {
   display: -webkit-box;
@@ -1212,7 +1227,7 @@ img.demo {
 footer {
   background-color: #211D16;
   color: whitesmoke;
-  font-family: "Izhitsa Cyrillic", arial;
+  font-family: "izhitsaCyrillic", arial;
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: -webkit-box;
@@ -1266,7 +1281,7 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
     font-size: 1.3rem;
-    font-family: "Izhitsa Cyrillic", arial;
+    font-family: "izhitsaCyrillic", arial;
     font-weight: 300;
     cursor: pointer; }
     footer .socialMedia-nav li {

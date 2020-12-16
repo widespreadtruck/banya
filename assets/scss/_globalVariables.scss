@@ -1,7 +1,11 @@
+@font-face {
+   font-family: 'izhitsaCyrillic';
+   src: url("../fonts/izhitsa-cyrillic_[allfont.ru].ttf") format("truetype");
+}
 $main-font: 'Muli', sans-serif;
 $secondary-font: 'Forum', cursive;
 $third-font: 'Philosopher', sans-serif;
-$forth-font: 'Izhitsa Cyrillic', arial;;
+$forth-font: 'izhitsaCyrillic', arial;;
 $offset: 2rem;
 $double-offset: 4rem;
 $triple-offset: 6rem;
@@ -18,9 +22,6 @@ $nav-size: 130px;
 $title-size: 9vmax;
 $easing: cubic-bezier(.694, 0, .335, 1);
 $heading-margin-top: 6rem;
-@import url(https://allfont.ru/allfont.css?fonts=cyrillicold);
-@import url(https://allfont.ru/allfont.css?fonts=izhitsa-cyrillic);
-
 
 @mixin bor {
     border: 1px solid red;
@@ -41,7 +42,7 @@ $heading-margin-top: 6rem;
 }
 
 @mixin sectionHeading {
-    font-size: 3.5vw;
+    font-size: 6vmin;
     font-weight: 700;
     line-height: 1.5;
     color: rgb(0, 77, 0);
@@ -49,7 +50,9 @@ $heading-margin-top: 6rem;
     // font-family: 'CyrillicOld', arial;
     font-family: $forth-font;
     text-shadow: 4px 4px 4px #aaa;
+    margin-top: $double-offset;
     margin-bottom: $double-offset;
+    text-transform: uppercase;
 }
 
 @mixin outlined($color: $dark-color, $size: 1px) {

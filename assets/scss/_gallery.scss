@@ -1,7 +1,7 @@
 #gallery {
     @include flexVer;
-    margin-top: $triple-offset;
-    margin-bottom: $triple-offset;
+    margin-top: $double-offset;
+    margin-bottom: $double-offset;
 
     h2 {
         @include sectionHeading;
@@ -19,6 +19,8 @@
     // padding: $offset 0;
     padding-left: $triple-offset;
     padding-right: $triple-offset;
+    padding-top: $offset;
+    padding-bottom: $offset;
 }
 
 .gallery__item {
