@@ -20,16 +20,33 @@
     flex: 1 1 50%;
     padding: $offset;
     padding-right: 0;
-}
-
-.infoContainer_block {
-    @include flexHor;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
     
-    i {
-        margin-right: 10px;
-        min-width: 26px;
+    &_address {
+        @include flexHor;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+
+        p {
+            font-weight: 700;
+        }
+        
+        i {
+            margin-right: 10px;
+            width: 30px;
+            font-size: 30px;
+        }
+    }
+
+    &_instructions {
+        padding-left: 40px;
+
+        p {
+            padding-bottom: 10px;
+        }
+
+        &__title {
+            font-weight: 700;
+        }
     }
 }

@@ -41,7 +41,7 @@ $heading-margin-top: 6rem;
 }
 
 @mixin sectionHeading {
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 700;
     line-height: 1.5;
     color: rgb(0, 77, 0);
@@ -97,7 +97,8 @@ body {
     font-family: $main-font;
     color: $dark-color;
     // background-color: #eed29b7e;
-    background-color: $soft-color;
+    background-color: #FCF7EE;
+    // background-color: $soft-color;
 }
 
 p {

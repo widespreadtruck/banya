@@ -1,35 +1,78 @@
 #booking {
-    @include flexHor;
+    @include flexVer;
+    margin-top: $double-offset;
+    margin-bottom: $triple-offset;
 
-    // h2 {
-    //     @include sectionHeading;
-    // }
+    h2 {
+        @include sectionHeading;
+    }
 }
 
-// .booking-cellphone {
-//     font-size: 1.3rem;
-//     margin-bottom: $offset;
-// }
-
-// .booking-container {
-//     @include flexHor;
-//     margin-bottom: $offset;
-
-// }
+.booking-Container {
+    @include flexHor;
+}
 
 .booking-LeftContainer {
     @include flexVer;
+    align-items: flex-start;
     flex: 1 1 50%;
+
+    &__boxes {
+        @include flexHor;
+        // align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: $offset;
+        
+        i {
+            font-size: 30px;
+            width: 30px;
+        }
+    
+        p {
+            font-size: 20px;
+            padding: 10px 1rem;
+            font-family: $secondary-font;
+            font-weight: 700;
+        }
+    }
 }
 
 .booking-RightContainer {
-    @include flexVer;
     flex: 1 1 50%;
+    @include flexVer;
     
-    li {
-        width: 50px;
-        height: 50px;
-        margin: 1rem;
+    .booking-socialContainer {
+        @include flexHor;
+    }
+}
+
+.booking-card {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    a {
+        @include flexVer;
+        padding: 10px;
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    img {
+        width: 80px !important;
+        height: 80px !important;
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        scale: 1.02;
+        transition: all 0.1s ease-in-out;
     }
 }
 

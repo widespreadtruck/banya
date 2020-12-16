@@ -25,6 +25,12 @@
     border-radius: 15px;
     background-color: $soft-color;
 
+    &:hover {
+        // scale: 1.01;
+        // transform: translateY(-2px);
+        // transition: all 0.4s ease-in-out;
+    }
+
     &__imgBox {
         height: 150px;
         width: 100%;
@@ -50,7 +56,7 @@
     }
 
     .priceTag {
-        font-size: 4vw;
+        font-size: 6vmin;
         
     }
 }
@@ -58,6 +64,7 @@
 .pricing-note {
     margin-top: $double-offset;
     margin-bottom: $triple-offset;
+    font-size: 1.4rem;
 }
 
 
