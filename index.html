@@ -17,11 +17,11 @@
 <body>
     <section id="hero-slider">
         <div id="logo" class="mask">
-            <img class="logo-text masked" src="./assets/img//logo.png" alt="Логотип Бани на Сухой Самарке">
+            <img class="logo-text masked" src="./assets/img/logo.png" alt="Логотип Бани на Сухой Самарке">
         </div>
         <nav id="navigation">
             <ul>
-                <li class="navigation_cellphone"><a href="tel:+79677671855">8-967-767-18-55</a></li>
+                <li><a href="tel:+79677671855">8-967-767-18-55</a></li>
                 <li><a href="#gallery">Фото</a></li>
                 <li><a href="#pricing">Цены</a></li>
                 <li><a href="#map">Карта проезда</a></li>
@@ -30,10 +30,34 @@
                 <li><a href="#">Контакты</a></li> -->
             </ul>
         </nav>
-        
+<!-- Burger menu starts -->
+        <div id="burgerIcon" onclick=openCloseBurger()>
+            <input type="checkbox" id="checkbox">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="burgerMenu" >
+            <a href="#gallery">
+                <li>Фото</li>
+            </a>
+            <a href="#pricing">
+                <li>Цены</li>
+            </a>
+            <a href="#map">
+                <li>Карта проезда</li>
+            </a>
+            <a href="#booking">
+                <li>Контакты</li>
+            </a>
+            <a href="tel:+79677671855">
+                <li>8-967-767-18-55</li>
+            </a>
+        </ul>
+<!-- Burger menu ends -->
         <div id="slideshow">
             <div id="slides-main" class="slides">
-                <div class="slide" data-index="0">
+                <!-- <div class="slide" data-index="0">
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/1.jpg)"></div>
                     </div>
@@ -52,7 +76,7 @@
                     <div class="abs-mask">
                         <div class="slide-image" style="background-image: url(./assets/img/compressed-slider/4.jpg)"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="slides-aux" class="slides mask">
                 <h2 class="slide-title slide" data-index="0"><a href="#">#БанькаНаСухойСамарке</a></h2>
@@ -68,11 +92,12 @@
             <span class="total">04</span>
         </nav>
     </section>
-
+    
     <section id="gallery" class="wrapper">
         <!-- <h2>Галлерея</h2> -->
+
         <div class="gallery">
-            <figure class="gallery__item gallery__item--1">
+            <!-- <figure class="gallery__item gallery__item--1">
                 <iframe class="gallery__img" src="https://www.youtube.com/embed/8OxLGWOLQj8?vq=hd1080&modestbranding=1&showinfo=0&rel=0" width="400" height="265" frameborder="0" >
                 </iframe>
             </figure>
@@ -97,7 +122,7 @@
             </figure>
             <figure class="gallery__item gallery__item--8">
                 <img src="./assets/img/gallery/gallery8.jpg" class="gallery__img" alt="Image 8" onclick="openModal();currentSlide(9)">
-            </figure>
+            </figure> -->
         </div>
 
         <!-- The Modal/Lightbox starts-->
@@ -192,10 +217,10 @@
     <section id="map" class="wrapper">
         <h2>Как нас найти</h2>
         <div class="map_container">
-            <iframe
+            <!-- <iframe
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3A211fcc938af58b4f0a3ba2d31723634a30d75d1e90cd32d65c6576c49eae58a3&amp;source=constructor"
                 width="700" height="450" frameborder="0">
-            </iframe>
+            </iframe> -->
             <div class="infoContainer">
                 <div class="infoContainer_address">
                     <i class="fas fa-map-marker-alt"></i>
@@ -301,6 +326,7 @@
 
 
     <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/burger.js"></script>
     <!-- initialize AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

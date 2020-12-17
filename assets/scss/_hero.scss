@@ -86,7 +86,7 @@
 
 
 #navigation {
-    // width: 100%;
+    // width: calc(100% - 350px);
     position: absolute;
     top: $offset;
     right: $offset;
@@ -94,15 +94,11 @@
     color: $soft-color;
     height: 45px;
     @include flexHor;
-    justify-content: space-between;
+    justify-content: flex-end;
+    // justify-content: space-between;
     
     ul {
         @include flexHor;
-
-        .navigation_cellphone {
-            margin-left: $offset;
-            margin-right: $offset;
-        }
         
         li {
             margin-left: $offset;
@@ -116,7 +112,17 @@
             @include flexVer
         }
     }
+
+    @include media('<1100px') {
+        display: none;
+    }
 }
+
+// #burger {
+//     @include media('>=1100px') {
+//         display: inline-block;
+//     }
+// }
 
 
 

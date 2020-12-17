@@ -1,3 +1,4 @@
+
 /**
  *  Utility functions
  */
@@ -253,6 +254,8 @@ window.addEventListener('load', heroSlider().init);
 window.addEventListener("resize", heroSlider().resize);
 
 
+
+
 // ***************************
 // Modal functions START
 // ***************************
@@ -327,18 +330,6 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " activeThumbnail";
-
-    // if (n > slides.length) { slideIndex = 1 }
-    // if (n < 1) { slideIndex = slides.length }
-    // for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = "none";
-    // }
-    // for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" activeThumbnail", "");
-    // }
-    // slides[slideIndex - 1].style.display = "block";
-    // dots[slideIndex - 1].className += " activeThumbnail";
-
 }
 
 document.addEventListener('keydown', function(e) {
@@ -363,7 +354,10 @@ document.addEventListener('keydown', function(e) {
 // LIGHTBOX end
 // **************************
 
-// initialize AOS Library
+// ***************************
+//  AOS Library start
+// **************************
+
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -384,5 +378,32 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 });
+// ***************************
+//  AOS Library end
+// **************************
+
+// ***************************
+//  burger menu start
+// **************************
+
+    
+// function openCloseBurger(x) {
+//     x.classList.toggle("change");
+// } 
+
+
+// ***************************
+//  burger menu end
+// **************************
+
+
+
+// const openCloseBurger = () => {
+//     document.getElementById('burgerIcon').classList.add("change");
+// }
+
+// let burger = document.getElementById('burgerIcon');
+// burger.onclick = function() {
+//     document.getElementById('burgerIcon').classList.toggle('change')
+// }
