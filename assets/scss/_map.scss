@@ -16,6 +16,24 @@
     }
 }
 
+@include media('>=phone', '<970px') {
+    .map_container {
+        @include flexVer;
+
+        .infoContainer {
+            padding: $offset 0;
+
+            &_instructions {
+                padding-left: 0;
+            }
+
+            &_instructions__title {
+                text-align: center;
+            }
+        }
+    }
+}
+
 .infoContainer {
     flex: 1 1 50%;
     padding: $offset;

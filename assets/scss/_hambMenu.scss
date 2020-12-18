@@ -1,7 +1,7 @@
 #burgerIcon {
   // display: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: $offset;
   right: $offset;
   z-index: 700;
@@ -24,8 +24,8 @@
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: black;
-    // background-color: $soft-color;
+    // background-color: black;
+    background-color: $soft-color;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -44,9 +44,9 @@
 
 
 #burgerIcon input {
-  opacity: 0.5;
+  opacity: 0;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 710;
   width: 35px;
   height: 40px;
@@ -58,13 +58,18 @@
   top: 0;
   right: 0;
   z-index: 600;
-  max-width: 300px;
-  width: 80%;
+  width: 90%;
   height: 100vh;
+
+  max-width: 300px;
   margin-right: -300px;
+  
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: black;
+  color: $soft-color;
+  // background: #ededed;
+  opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);

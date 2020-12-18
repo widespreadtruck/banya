@@ -11,17 +11,50 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    // grid-template-rows: repeat(16, 6vh);
     grid-template-rows: repeat(16, 4.5vh);
-    // grid-template-rows: repeat(16, 3.6vw);
     grid-gap: 10px;
-    // margin-top: $offset;
-    // padding: $offset 0;
     padding-left: $triple-offset;
     padding-right: $triple-offset;
     padding-top: $offset;
     padding-bottom: $offset;
+    
+    @include media('>phone', '<=tablet') {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        .gallery__item--1,
+        .gallery__item--2,
+        .gallery__item--3,
+        .gallery__item--4,
+        .gallery__item--5,
+        .gallery__item--6,
+        .gallery__item--7,
+        .gallery__item--8 {
+            width: 100% !important;
+            height: 70vw;
+        }
+        .gallery__item--6 img {
+            object-position: 0% 90%;
+        }
+        .gallery__item--7 img {
+            object-position: 0% 25%;
+        }
+        
+        iframe,
+        img {
+            border-radius: 3px !important;
+        }
+    }
+
+    @include media('>tablet', '<=desktop') {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
+
 
 .gallery__item {
     cursor: pointer;
@@ -122,6 +155,10 @@
             object-fit: cover;
             object-position: 60% 65%;
         }
+    }
+
+    @include media('>=phone', '<525px') {
+        display: none;
     }
 }
 

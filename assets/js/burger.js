@@ -1,17 +1,16 @@
 // ***************************
 //  burger menu start
 // **************************
+
 // const burgerIcon = document.getElementById('burgerIcon');
 const burgerMenu = document.getElementById('burgerMenu');
 const checkbox = document.getElementById("checkbox");
 
 const openCloseBurger = () => {
     burgerIcon.classList.toggle("change");
-
     if (checkbox.checked) {
         burgerMenu.style.transform = "translateX(-100%)";
-    }
-    else {
+    } else {
         burgerMenu.style.transform = "translateX(0%)";
     }
 }
@@ -26,7 +25,7 @@ menuItems.forEach(function (navElement) {
 });
 
 window.onclick = function(event) {
-    if (event.target == !burgerMenu) {
+    if (event.target == burgerMenu) {
         checkbox.checked = false;
         openCloseBurger();
     }

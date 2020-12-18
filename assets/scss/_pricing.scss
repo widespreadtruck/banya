@@ -8,12 +8,18 @@
     h2 {
         @include sectionHeading;
         margin-top: $triple-offset;
-            margin-bottom: $offset;
+        margin-bottom: $offset;
+        max-width: 80%;
+        text-align: center
     }
 }
 
 .cards-container {
     @include flexHor;
+
+    @include media('>=phone', '<tablet' ) {
+        flex-wrap: wrap;
+    }
 }
 
 .pricing_card {
@@ -64,12 +70,39 @@
     &__title {
         font-weight: 700;
     }
+
+    @include media('>=phone', '<360px' ) {
+        .pricing_card {
+
+            &__title {
+                // padding: 1rem 0rem;
+            }
+
+            &__priceTag {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+@include media('>=phone', '<360px' ) {
+    .pricing_card p {
+        padding: 0.5rem 10px;
+    }
+
+    .pricing-note {
+        font-size: 1.3rem !important;
+    }
 }
 
 .pricing-note {
     margin-top: $offset;
     margin-bottom: $triple-offset;
     font-size: 1.4rem;
+
+    @include media('>=phone', '<tablet' ) {
+        max-width: 80%;
+        text-align: center;
+    }
 }
 
 

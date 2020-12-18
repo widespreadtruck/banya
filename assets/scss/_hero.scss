@@ -17,13 +17,6 @@
     padding-right: $offset;
     z-index: 300;
 
-    // .logo-text {
-    //     // position: relative;
-    //     // font-size: 2rem;
-    //     // font-weight: 300;
-    //     // color: #EED39B !important;
-    // }
-
     &:after {
         content: '';
         position: absolute;
@@ -34,6 +27,28 @@
         background-color: $soft-color;
     }
 }
+
+@include media('>525px', '<tablet') {
+    #logo {
+        img {
+            height: 40px;        
+        }
+    }
+}
+@include media('>phone', '<=525px') {
+    #logo {
+        padding-right: 1rem;
+        img {
+            margin-top: 6px;
+            height: 30px;
+        }
+        &:after {
+            background-color: transparent;
+        }
+    }
+}
+
+
 
 #slideshow {
     position: relative;
@@ -62,6 +77,16 @@
         z-index: -1;
     }
 }
+@include media('>1px', '<=525px') {
+    #slides-main {
+        background-image: url('../img/mobileHomeBg.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        .slide {
+            display: none;
+        }
+    }
+}
 
 
 
@@ -82,6 +107,11 @@
         font-style: italic;
         // font-family: $third-font;
     }
+
+    @include media('>phone', '<=tablet') {
+        opacity: 0;
+    }
+
 }
 
 
@@ -171,7 +201,12 @@
     }
 
     >span {
-        font-size: 1.5rem;
+        font-size: 3vmin;
+        // font-size: 1.5rem;
+    }
+
+    @include media('<tablet') {
+        display: none;
     }
 }
 
