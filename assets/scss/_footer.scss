@@ -1,27 +1,24 @@
 footer {
     background-color: #211D16;
-    // height: 200px;
     color: whitesmoke;
     font-family: $forth-font;
     padding-top: $double-offset;
     padding-bottom: $double-offset;
     @include flexVer;
+    text-align: center;
+    color: $soft-color;
     
-    .socialMedia-container {
-        @include flexHor;
-        margin-bottom: $offset;
+    // .socialMedia-container {
+    //     @include flexHor;
+    //     margin-bottom: $offset;
     
-        li {
-            width: 50px;
-            height: 50px;
-            margin: 1rem;
-        }
-    }
+    //     li {
+    //         width: 50px;
+    //         height: 50px;
+    //         margin: 1rem;
+    //     }
+    // }
 
-    .socialMedia-cellphone {
-        font-size: 1.3rem;
-        margin-bottom: $offset;
-    }
 
     .socialMedia-nav {
         @include flexHor;
@@ -32,12 +29,45 @@ footer {
         cursor: pointer;
         
         li {
-            margin: 0 $offset;
+            margin-left: $offset;
         }
+        
+        li a {
+            border-bottom:1px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        a:hover,
+        a:active {
+            border-bottom:1px solid $soft-color;
+            padding-bottom:2px;
+        }
+
     }
 
     .copyright {
         margin-top: $offset;
+    }
+}
+
+@include media('>=phone', '<tablet') {
+    footer {
+        text-align: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .socialMedia-nav {
+            @include flexVer;
+            align-items: flex-start;
+            li {
+                margin-left: 0;
+                margin-bottom: $offset;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }
 

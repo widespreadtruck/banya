@@ -5,11 +5,16 @@
 
     h2 {
         @include sectionHeading;
+    }  
+    
+    @include media('>=phone', '<970px') {
+        margin-top: 0;
     }
 }
 
 .booking-Container {
     @include flexHor;
+    width: 100%;
 }
 
 .booking-LeftContainer {
@@ -25,7 +30,7 @@
         
         i {
             font-size: 30px;
-            width: 30px;
+            min-width: 30px;
         }
     
         p {
@@ -39,12 +44,10 @@
 
 .booking-RightContainer {
     flex: 1 1 50%;
-    @include flexVer;
+    @include flexHor;
     
-    .booking-socialContainer {
-        @include flexHor;
-    }
 }
+
 
 .booking-card {
     width: 150px;
@@ -70,9 +73,84 @@
         margin-bottom: 5px;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         scale: 1.02;
         transition: all 0.1s ease-in-out;
+        // border: 1px solid grey;
+        background-color: whitesmoke;
     }
 }
 
+@include media('>=950px', '<1300px') {
+    .booking-LeftContainer {
+        min-width: 450px !important;
+        flex: 1 1 70%;
+
+        &__boxes {
+            margin: 10px 0;
+        }
+    }
+    .booking-RightContainer {
+        flex-wrap: wrap;
+    }
+}
+@include media('>=phone', '<950px') {
+    .booking-Container {
+        @include flexVer;
+    }
+
+    .booking-LeftContainer {
+        width: 100%;
+        margin-bottom: $offset;
+    }
+    .booking-RightContainer {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+@include media('>=phone', '<tablet') {
+    .booking-LeftContainer__boxes {
+        padding-left: 10px;
+
+        i {
+            font-size: 30px;
+            min-width: 30px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding: 10px 10px;
+        }
+    }
+
+    .booking-RightContainer {
+        flex-wrap: wrap;
+    }
+
+    .booking-card {
+        flex: 1 1 35%;
+    }
+}
+@include media('>=phone', '<450px') {
+    .booking-LeftContainer__boxes {
+        padding-left: 10px;
+        // margin: 0 auto;
+
+        i {
+            font-size: 25px;
+            min-width: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .booking-card {
+        flex: 1 1 100%;
+    }
+}

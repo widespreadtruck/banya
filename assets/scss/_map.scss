@@ -6,30 +6,58 @@
     h2 {
         @include sectionHeading;
     }
+
+    @include media('>=phone', '<970px') {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 .map_container {
     @include flexHor;
+    width: 100%;
     
     iframe {
-        flex: 1 1 auto;
+        flex: 1 1 50%;
     }
 }
 
 @include media('>=phone', '<970px') {
     .map_container {
         @include flexVer;
+        // min-height: 1000px;
 
         .infoContainer {
             padding: $offset 0;
 
+            // iframe {
+            //     height: 450px;
+            // }
+
+            &_address {
+                @include flexHor;
+                justify-content: center;
+                // align-items: flex-start;
+            }
+
             &_instructions {
-                padding-left: 0;
+                padding-left: 10px;
             }
 
             &_instructions__title {
                 text-align: center;
             }
+        }
+    }
+}
+
+@include media('>=phone', '<450px') {
+    .infoContainer {
+        &_address {
+            padding-left: 10px;
+        }
+        p {
+            font-size: 1.2rem;
         }
     }
 }

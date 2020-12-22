@@ -53,6 +53,9 @@ $heading-margin-top: 6rem;
     margin-top: $double-offset;
     margin-bottom: $double-offset;
     text-transform: uppercase;
+    width: 80%;
+    max-width: 600px;
+    text-align: center
 }
 
 @mixin outlined($color: $dark-color, $size: 1px) {
@@ -93,7 +96,7 @@ html {
 
 html,
 body {
-    // overflow: hidden;
+    // overflow-x: hidden;
     height: 100vh;
 }
 
@@ -128,4 +131,8 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+}
+
+.nobreak {
+    white-space: nowrap;
 }

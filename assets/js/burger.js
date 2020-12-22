@@ -1,17 +1,16 @@
 // ***************************
 //  burger menu start
 // **************************
-
-// const burgerIcon = document.getElementById('burgerIcon');
+const burgerIcon = document.getElementById('burgerIcon');
 const burgerMenu = document.getElementById('burgerMenu');
 const checkbox = document.getElementById("checkbox");
 
 const openCloseBurger = () => {
     burgerIcon.classList.toggle("change");
     if (checkbox.checked) {
-        burgerMenu.style.transform = "translateX(-100%)";
+        burgerMenu.style.right = "0%";
     } else {
-        burgerMenu.style.transform = "translateX(0%)";
+        burgerMenu.style.right = "-100%";
     }
 }
 
@@ -30,6 +29,12 @@ window.onclick = function(event) {
         openCloseBurger();
     }
 };
+
+// if (document.getElementById("myModal").style.display = "block") {
+//     // checkbox.checked = false;
+//     // openCloseBurger();
+//     burgerIcon.style.display = 'none';
+// }
 
 
 // ***************************

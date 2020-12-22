@@ -295,11 +295,21 @@ window.addEventListener("resize", heroSlider().resize);
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
+    document.getElementById('burgerIcon').style.opacity = "0";
+
+    //close burgerMenu
+    // document.getElementById("checkbox").checked = false;
+    // openCloseBurger();
 }
 
 // Close the Modal
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById('burgerIcon').style.opacity = "1";
+
+    //close burgerMenu
+    // document.getElementById("checkbox").checked = false;
+    // openCloseBurger();
 }
 
 var slideIndex = 1;
