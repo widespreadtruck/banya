@@ -55,7 +55,11 @@ $heading-margin-top: 6rem;
     text-transform: uppercase;
     width: 80%;
     max-width: 600px;
-    text-align: center
+    text-align: center;
+
+    @include media('>phone', '<=tablet') {
+        margin-bottom: $offset;    
+    }
 }
 
 @mixin outlined($color: $dark-color, $size: 1px) {

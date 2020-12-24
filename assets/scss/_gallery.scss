@@ -68,6 +68,12 @@
         img {
             border-radius: 3px !important;
         }
+
+        .gallery__item--1 {
+            iframe {
+                object-fit: cover;
+            }
+        }
     }
 
     @include media('>tablet', '<=desktop') {

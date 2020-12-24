@@ -12,6 +12,8 @@
 
   @include media('<1100px') {
     display: block;
+    top: 20px;
+    right: 20px;
   }
   @include media('>=1100px') {
     display: none;
@@ -92,11 +94,10 @@
     cursor: pointer;
   }
 
-
-        li:hover,
-        li:active {
-            text-decoration: underline;
-        }
+  li:hover,
+  li:active {
+    text-decoration: underline;
+  }
 }
 
 
