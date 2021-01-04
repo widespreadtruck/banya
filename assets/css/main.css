@@ -1595,7 +1595,7 @@ footer {
   transform: rotate(45deg) translate(-8px, -8px); }
 
 #burgerIcon input {
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   position: fixed;
   z-index: 710;
