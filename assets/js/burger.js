@@ -13,6 +13,8 @@ const openCloseBurger = () => {
         burgerMenu.style.right = "-100%";
     }
 }
+burgerIcon.addEventListener("touchstart", openCloseBurger(), false);
+
 
 const menuItems = document.querySelectorAll("#burgerMenu a");
 
