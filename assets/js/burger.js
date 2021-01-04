@@ -5,15 +5,31 @@ const burgerIcon = document.getElementById('burgerIcon');
 const burgerMenu = document.getElementById('burgerMenu');
 const checkbox = document.getElementById("checkbox");
 
-const openCloseBurger = () => {
+// const openCloseBurger = () => {
+//     burgerIcon.classList.toggle("change");
+//     if (checkbox.checked) {
+//         burgerMenu.style.right = "0%";
+//     } else {
+//         burgerMenu.style.right = "-100%";
+//     }
+// }
+burgerIcon.addEventListener("click", () => {
     burgerIcon.classList.toggle("change");
     if (checkbox.checked) {
         burgerMenu.style.right = "0%";
     } else {
         burgerMenu.style.right = "-100%";
     }
-}
-burgerIcon.addEventListener("touchstart", openCloseBurger(), false);
+}, false);
+
+burgerIcon.addEventListener("touchstart", () => {
+    burgerIcon.classList.toggle("change");
+    if (checkbox.checked) {
+        burgerMenu.style.right = "0%";
+    } else {
+        burgerMenu.style.right = "-100%";
+    }
+}, false);
 
 
 const menuItems = document.querySelectorAll("#burgerMenu a");
