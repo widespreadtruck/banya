@@ -31,28 +31,29 @@
             </ul>
         </nav>
         <!-- Burger menu starts -->
-        <div id="burgerIcon" onclick="openCloseBurger()">
+        <div id="burgerIcon" 
+        >
             <div class="burgerWrapper">
-                <input type="checkbox" id="checkbox">
+                <!-- <input type="checkbox" id="checkbox"> -->
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
         </div>
         <ul id="burgerMenu" >
-            <a href="#home">
+            <a href="#home" class="burgerMenu__link">
                 <li>Главная</li>
             </a>
-            <a href="#gallery">
+            <a href="#gallery" class="burgerMenu__link">
                 <li>Фото</li>
             </a>
-            <a href="#pricing">
+            <a href="#pricing" class="burgerMenu__link">
                 <li>Цены</li>
             </a>
-            <a href="#map">
+            <a href="#map" class="burgerMenu__link">
                 <li>Карта проезда</li>
             </a>
-            <a href="#booking">
+            <a href="#booking" class="burgerMenu__link">
                 <li>Контакты</li>
             </a>
             <a href="tel:+79677671855">
@@ -316,6 +317,8 @@
         <p class="copyright wrapper">Разработал <a href="nikitaguliaev.com">nikitaguliaev.com</a></p>
     </footer>
 
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <!-- burger menu script -->
     <script src="/assets/js/burger.js"></script>

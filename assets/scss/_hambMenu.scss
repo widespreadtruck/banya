@@ -58,8 +58,8 @@
 }
 
 
-#burgerIcon input {
-  opacity: 1;
+#checkbox {
+  opacity: 0.5;
   cursor: pointer;
   position: fixed;
   z-index: 710;
@@ -98,6 +98,10 @@
   li:active {
     text-decoration: underline;
   }
+}
+
+#checkbox:checked #burgerMenu {
+  right: 0%;  
 }
 
 

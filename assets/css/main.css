@@ -1594,8 +1594,8 @@ footer {
   -ms-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
-#burgerIcon input {
-  opacity: 1;
+#checkbox {
+  opacity: 0.5;
   cursor: pointer;
   position: fixed;
   z-index: 710;
@@ -1631,3 +1631,6 @@ footer {
   #burgerMenu li:hover,
   #burgerMenu li:active {
     text-decoration: underline; }
+
+#checkbox:checked #burgerMenu {
+  right: 0%; }
