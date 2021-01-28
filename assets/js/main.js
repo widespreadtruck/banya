@@ -385,27 +385,3 @@ document.addEventListener('keydown', function(e) {
 //  AOS Library end
 // **************************
 
-// ***************************
-//  burger menu start
-// **************************
-
-    
-// function openCloseBurger(x) {
-//     x.classList.toggle("change");
-// } 
-
-
-// ***************************
-//  burger menu end
-// **************************
-
-
-
-// const openCloseBurger = () => {
-//     document.getElementById('burgerIcon').classList.add("change");
-// }
-
-// let burger = document.getElementById('burgerIcon');
-// burger.onclick = function() {
-//     document.getElementById('burgerIcon').classList.toggle('change')
-// }

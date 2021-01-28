@@ -18,6 +18,11 @@
   @include media('>=1100px') {
     display: none;
   }
+
+  @include media('>phone', '<400px') {
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .burgerWrapper {
@@ -58,15 +63,15 @@
 }
 
 
-#checkbox {
-  opacity: 0.5;
-  cursor: pointer;
-  position: fixed;
-  z-index: 710;
-  width: 55px;
-  height: 55px;
-  -webkit-touch-callout: none;
-}
+// #checkbox {
+//   opacity: 0.5;
+//   cursor: pointer;
+//   position: fixed;
+//   z-index: 710;
+//   width: 55px;
+//   height: 55px;
+//   -webkit-touch-callout: none;
+// }
 
 #burgerMenu {
   position: fixed;

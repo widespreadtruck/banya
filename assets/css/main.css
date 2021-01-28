@@ -281,12 +281,21 @@ p {
   #logo img {
     height: 40px; } }
 
-@media (min-width: 301px) and (max-width: 525px) {
+@media (min-width: 320) and (max-width: 525px) {
   #logo {
     padding-right: 1rem; }
     #logo img {
       margin-top: 0px;
       height: 35px; }
+    #logo:after {
+      background-color: transparent; } }
+
+@media (min-width: 301px) and (max-width: 320px) {
+  #logo {
+    padding-right: 1rem; }
+    #logo img {
+      margin-top: 0px;
+      height: 30px; }
     #logo:after {
       background-color: transparent; } }
 
@@ -337,9 +346,13 @@ p {
     border: 1px solid transparent;
     border-radius: 5px; }
 
-@media (min-width: 301px) and (max-width: 768px) {
+@media (min-width: 451px) and (max-width: 768px) {
   .slide-title {
     font-size: 2rem !important; } }
+
+@media (min-width: 301px) and (max-width: 450px) {
+  .slide-title {
+    font-size: 1.5rem !important; } }
 
 #navigation {
   position: absolute;
@@ -620,6 +633,16 @@ p {
   -o-transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s; }
+
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+  #slides-aux {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    top: 0; } }
 
 #gallery {
   display: -webkit-box;
@@ -1548,6 +1571,11 @@ footer {
     #burgerIcon {
       display: none; } }
 
+@media (min-width: 301px) and (max-width: 399px) {
+  #burgerIcon {
+    top: 10px;
+    right: 10px; } }
+
 .burgerWrapper {
   width: 55px;
   height: 55px;
@@ -1593,15 +1621,6 @@ footer {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   -ms-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
-
-#checkbox {
-  opacity: 0.5;
-  cursor: pointer;
-  position: fixed;
-  z-index: 710;
-  width: 55px;
-  height: 55px;
-  -webkit-touch-callout: none; }
 
 #burgerMenu {
   position: fixed;

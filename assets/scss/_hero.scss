@@ -47,7 +47,7 @@
         }
     }
 }
-@include media('>phone', '<=525px') {
+@include media('>320', '<=525px') {
     #logo {
         padding-right: 1rem;
         img {
@@ -59,7 +59,18 @@
         }
     }
 }
-
+@include media('>phone', '<=320px') {
+    #logo {
+        padding-right: 1rem;
+        img {
+            margin-top: 0px;
+            height: 30px;
+        }
+        &:after {
+            background-color: transparent;
+        }
+    }
+}
 
 
 #slideshow {
@@ -124,9 +135,14 @@
     }    
 }
 
-@include media('>phone', '<=tablet') {
+@include media('>450px', '<=tablet') {
     .slide-title {
         font-size: 2rem !important;
+    }
+}
+@include media('>phone', '<=450px') {
+    .slide-title {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -414,11 +430,11 @@
 
 
 @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    // #slides-aux {
-    //     display: flex;
-    //     align-items: flex-end;
-    //     top: 0;
-    // }
+    #slides-aux {
+        display: flex;
+        align-items: flex-end;
+        top: 0;
+    }
 }
 
 
