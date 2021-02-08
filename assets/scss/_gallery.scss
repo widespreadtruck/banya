@@ -1,17 +1,37 @@
 #gallery {
     @include flexVer;
-    margin-top: $double-offset;
-    margin-bottom: $double-offset;
-
-    h2 {
-        @include sectionHeading;
-    }
-
-    @include media('>=phone', '<970px') {
+    // margin-top: $double-offset;
+    // margin-bottom: $double-offset;
+    
+}
+.headerVideo {
+    @include sectionHeading;
+    // margin-bottom: 0;
+    // margin-top: 0;
+    
+    @include media('>=1175px', '<2000px') {
+        margin-top: $triple-offset;
         margin-bottom: 0;
-        margin-top: $offset;
+    }
+    @include media('>=tablet', '<1175px') {
+        margin-top: $triple-offset;
+        margin-bottom: $offset;
     }
 }
+
+.headerPhoto {
+    @include sectionHeading;
+
+    @include media('>=1175px', '<2000px') {
+        margin-top: $double-offset;
+        margin-bottom: $offset;
+    }
+        @include media('>=tablet', '<1175px') {
+        margin-top: $double-offset;
+        margin-bottom: $offset;
+    }
+}
+
 
 .gallery {
     display: grid;
@@ -45,6 +65,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        grid-gap: 0px;
 
         .gallery__item--1,
         .gallery__item--2,
@@ -58,6 +79,18 @@
             width: 90% !important;
             height: 70vw;
         }
+
+        .gallery__item--1 img,
+        .gallery__item--2 img,
+        .gallery__item--3 img,
+        .gallery__item--4 img,
+        .gallery__item--5 img,
+        .gallery__item--6 img,
+        .gallery__item--7 img,
+        .gallery__item--8 img {
+            border-radius: 20px;
+        }
+
         .gallery__item--6 img {
             object-position: 0% 90%;
         }
