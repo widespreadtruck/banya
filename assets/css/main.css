@@ -281,7 +281,7 @@ p {
   #logo img {
     height: 40px; } }
 
-@media (min-width: 320) and (max-width: 525px) {
+@media (min-width: 321px) and (max-width: 525px) {
   #logo {
     padding-right: 1rem; }
     #logo img {

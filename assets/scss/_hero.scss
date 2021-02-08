@@ -47,7 +47,7 @@
         }
     }
 }
-@include media('>320', '<=525px') {
+@include media('>320px', '<=525px') {
     #logo {
         padding-right: 1rem;
         img {
