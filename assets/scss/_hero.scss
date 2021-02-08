@@ -105,9 +105,9 @@
         background-image: url('../img/mobileHomeBg.jpg');
         background-size: cover;
         background-position: 50% 50%;
-        .slide {
-            display: none;
-        }
+        // .slide {
+        //     display: none;
+        // }
     }
 }
 
@@ -429,13 +429,13 @@
 }
 
 
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    #slides-aux {
-        display: flex;
-        align-items: flex-end;
-        top: 0;
-    }
-}
+// @media only screen and (max-device-width: 768px) and (orientation: portrait) {
+//     #slides-aux {
+//         display: flex;
+//         align-items: flex-end;
+//         top: 0;
+//     }
+// }
 
 
 

@@ -326,9 +326,7 @@ p {
   #slides-main {
     background-image: url("../img/mobileHomeBg.jpg");
     background-size: cover;
-    background-position: 50% 50%; }
-    #slides-main .slide {
-      display: none; } }
+    background-position: 50% 50%; } }
 
 #slides-aux {
   position: relative;
@@ -633,16 +631,6 @@ p {
   -o-transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
   transition: opacity 0.6s 0.8s, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.8s; }
-
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
-  #slides-aux {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    top: 0; } }
 
 #gallery {
   display: -webkit-box;
