@@ -254,7 +254,7 @@ p {
   #hero-slider:not(.ready) {
     visibility: hidden; }
   #hero-slider .navBar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
@@ -262,16 +262,16 @@ p {
     width: 100vw;
     z-index: 200; }
 
-@media (min-width: 376px) and (max-width: 415px) {
+@media (min-width: 376px) and (max-width: 414px) {
   #hero-slider .navBar {
-    height: 75px; } }
+    height: 85px; } }
 
 @media (min-width: 321px) and (max-width: 375px) {
   #hero-slider .navBar {
     height: 75px; } }
 
 #logo {
-  position: absolute;
+  position: fixed;
   top: 2rem;
   left: 2rem;
   padding-right: 2rem;
@@ -303,7 +303,7 @@ p {
 @media (min-width: 376px) and (max-width: 414px) {
   #logo {
     padding-right: 1rem;
-    top: 22px;
+    top: 2rem;
     left: 2rem; }
     #logo img {
       margin-top: 0px;
@@ -356,11 +356,14 @@ p {
   align-items: center;
   color: #EED39B;
   cursor: pointer;
-  z-index: 800;
+  z-index: 500;
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
   height: auto; }
+  .linkToGallery a {
+    width: auto;
+    height: auto; }
 
 @media (min-width: 301px) and (max-width: 525px) {
   .linkToGallery {
