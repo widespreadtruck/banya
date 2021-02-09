@@ -19,7 +19,10 @@
         height: 100px;
         width: 100vw;
         z-index: 200;
-        @include media('>320px', '<=525px') {
+        @include media('>375px', '<=415px') {
+            height: 75px;
+        }
+        @include media('>320px', '<=375px') {
             height: 75px;
         }
     }
@@ -50,7 +53,7 @@
         }
     }
 }
-@include media('>320px', '<=525px') {
+@include media('>320px', '<=375px') {
     #logo {
         padding-right: 1rem;
         top: 20px;
@@ -65,12 +68,15 @@
         }
     }
 }
-@include media('>phone', '<=320px') {
+@include media('>375px', '<415px') {
     #logo {
         padding-right: 1rem;
+        top: 22px;
+        left: $offset;
+
         img {
             margin-top: 0px;
-            height: 30px;
+            height: 35px;
         }
         &:after {
             background-color: transparent;
@@ -120,7 +126,7 @@
 .linkToGallery {
     display: none;
     position: absolute;
-    bottom: $double-offset;
+    bottom: $triple-offset;
     left: 0;
     right: 0;
     text-align: center;

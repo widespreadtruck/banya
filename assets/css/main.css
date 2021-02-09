@@ -262,7 +262,11 @@ p {
     width: 100vw;
     z-index: 200; }
 
-@media (min-width: 321px) and (max-width: 525px) {
+@media (min-width: 376px) and (max-width: 415px) {
+  #hero-slider .navBar {
+    height: 75px; } }
+
+@media (min-width: 321px) and (max-width: 375px) {
   #hero-slider .navBar {
     height: 75px; } }
 
@@ -285,7 +289,7 @@ p {
   #logo img {
     height: 40px; } }
 
-@media (min-width: 321px) and (max-width: 525px) {
+@media (min-width: 321px) and (max-width: 375px) {
   #logo {
     padding-right: 1rem;
     top: 20px;
@@ -296,12 +300,14 @@ p {
     #logo:after {
       background-color: transparent; } }
 
-@media (min-width: 301px) and (max-width: 320px) {
+@media (min-width: 376px) and (max-width: 414px) {
   #logo {
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    top: 22px;
+    left: 2rem; }
     #logo img {
       margin-top: 0px;
-      height: 30px; }
+      height: 35px; }
     #logo:after {
       background-color: transparent; } }
 
@@ -339,7 +345,7 @@ p {
 .linkToGallery {
   display: none;
   position: absolute;
-  bottom: 4rem;
+  bottom: 6rem;
   left: 0;
   right: 0;
   text-align: center;
@@ -734,6 +740,11 @@ p {
   .headerPhoto {
     margin-top: 4rem;
     margin-bottom: 2rem; } }
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .headerPhoto {
+    margin-top: 6rem;
+    margin-bottom: calc($offset / 2); } }
 
 .gallery {
   display: -ms-grid;

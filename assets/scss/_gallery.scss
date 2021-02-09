@@ -21,14 +21,18 @@
 
 .headerPhoto {
     @include sectionHeading;
-
+    
     @include media('>=1175px', '<2000px') {
         margin-top: $double-offset;
         margin-bottom: $offset;
     }
-        @include media('>=tablet', '<1175px') {
+    @include media('>=tablet', '<1175px') {
         margin-top: $double-offset;
         margin-bottom: $offset;
+    }
+    @include media('>=phone', '<tablet') {
+        margin-top: $triple-offset;
+        margin-bottom: calc($offset / 2);
     }
 }
 
