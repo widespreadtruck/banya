@@ -137,11 +137,16 @@
     color: $soft-color;
     cursor: pointer;
     z-index: 800;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
 
     @include media('>phone', '<=525px') {
         display: block;
     }
 }
+
 
 
 #slides-aux {
