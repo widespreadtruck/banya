@@ -262,6 +262,10 @@ p {
     width: 100vw;
     z-index: 200; }
 
+@media (min-width: 321px) and (max-width: 525px) {
+  #hero-slider .navBar {
+    height: 75px; } }
+
 #logo {
   position: absolute;
   top: 2rem;
@@ -283,7 +287,9 @@ p {
 
 @media (min-width: 321px) and (max-width: 525px) {
   #logo {
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    top: 20px;
+    left: 20px; }
     #logo img {
       margin-top: 0px;
       height: 35px; }
@@ -326,7 +332,27 @@ p {
   #slides-main {
     background-image: url("../img/mobileHomeBg.jpg");
     background-size: cover;
-    background-position: 50% 50%; } }
+    background-position: 50% 50%; }
+    #slides-main .slides {
+      display: none; } }
+
+.linkToGallery {
+  display: none;
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "izhitsaCyrillic", arial;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #EED39B; }
+
+@media (min-width: 301px) and (max-width: 525px) {
+  .linkToGallery {
+    display: block; } }
 
 #slides-aux {
   position: relative;
@@ -343,6 +369,10 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid transparent;
     border-radius: 5px; }
+
+@media (min-width: 301px) and (max-width: 525px) {
+  #slides-aux {
+    display: none; } }
 
 @media (min-width: 451px) and (max-width: 768px) {
   .slide-title {

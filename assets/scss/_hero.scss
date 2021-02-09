@@ -19,6 +19,9 @@
         height: 100px;
         width: 100vw;
         z-index: 200;
+        @include media('>320px', '<=525px') {
+            height: 75px;
+        }
     }
 }
 
@@ -50,6 +53,9 @@
 @include media('>320px', '<=525px') {
     #logo {
         padding-right: 1rem;
+        top: 20px;
+        left: 20px;
+
         img {
             margin-top: 0px;
             height: 35px;
@@ -100,17 +106,34 @@
         z-index: -1;
     }
 }
+
 @include media('>phone', '<=525px') {
     #slides-main {
         background-image: url('../img/mobileHomeBg.jpg');
         background-size: cover;
         background-position: 50% 50%;
-        // .slide {
-        //     display: none;
-        // }
+        .slides {
+            display: none;
+        }
     }
 }
+.linkToGallery {
+    display: none;
+    position: absolute;
+    bottom: $double-offset;
+    left: 0;
+    right: 0;
+    text-align: center;
+    // width: 100px;
+    font-size: 1.5rem;
+    font-family: $forth-font;
+    align-items: center;
+    color: $soft-color;
 
+    @include media('>phone', '<=525px') {
+        display: block;
+    }
+}
 
 
 #slides-aux {
@@ -133,6 +156,9 @@
         border: 1px solid transparent;
         border-radius: 5px;
     }    
+    @include media('>phone', '<=525px') {
+        display: none;
+    }
 }
 
 @include media('>450px', '<=tablet') {
@@ -145,6 +171,8 @@
         font-size: 1.5rem !important;
     }
 }
+
+
 
 
 #navigation {
