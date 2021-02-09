@@ -348,7 +348,9 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #EED39B; }
+  color: #EED39B;
+  cursor: pointer;
+  z-index: 800; }
 
 @media (min-width: 301px) and (max-width: 525px) {
   .linkToGallery {

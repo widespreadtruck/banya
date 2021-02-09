@@ -129,6 +129,8 @@
     font-family: $forth-font;
     align-items: center;
     color: $soft-color;
+    cursor: pointer;
+    z-index: 800;
 
     @include media('>phone', '<=525px') {
         display: block;
