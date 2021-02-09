@@ -35,7 +35,7 @@
 
   &:hover,
   &:active {
-    background-color: rgb(26, 25, 25)
+    background-color: rgba(63, 62, 62, 1)
   }
 }
 
@@ -50,16 +50,18 @@
     transition: 0.4s;
 }
 
-
 .change .bar1 {
   transform: rotate(-45deg) translate(-8px, 7px);
   // transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: whitesmoke;
+
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
+  background-color: whitesmoke;
 }
 
 
@@ -83,8 +85,15 @@
   max-width: 300px;  
   padding: 50px;
   padding-top: 125px;
-  background: black;
+  // background: $soft-color;
+  //         background-image: url('../img/6810716_preview.png.jpeg');
+  //       background-size: cover;
+  //       background-position: 50% 50%;
+
+  background: rgba(0, 0, 0, 0.85);
+  // color: rgba(0, 0, 0, 1);
   color: $soft-color;
+  color: whitesmoke;
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

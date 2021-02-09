@@ -254,10 +254,10 @@ p {
   #hero-slider:not(.ready) {
     visibility: hidden; }
   #hero-slider .navBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0);
     height: 100px;
     width: 100vw;
     z-index: 200; }
@@ -271,7 +271,7 @@ p {
     height: 75px; } }
 
 #logo {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   left: 2rem;
   padding-right: 2rem;
@@ -327,6 +327,7 @@ p {
 #slides-main:after {
   content: '';
   background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 100; }
 
 #slides-main .slide-image {
@@ -350,20 +351,31 @@ p {
   right: 0;
   text-align: center;
   font-size: 1.5rem;
-  font-family: "izhitsaCyrillic", arial;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #EED39B;
-  cursor: pointer;
   z-index: 500;
-  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
   height: auto; }
   .linkToGallery a {
-    width: auto;
-    height: auto; }
+    font-family: "izhitsaCyrillic", arial;
+    color: #EED39B; }
+  .linkToGallery button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #576927;
+    border: none;
+    font-size: 1.3rem;
+    border: 1px solid transparent; }
+    .linkToGallery button:active {
+      -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+      transform: translateY(3px);
+      background-color: #495820; }
+    .linkToGallery button:hover {
+      background-color: #495820;
+      border: 1px solid #EED39B; }
 
 @media (min-width: 301px) and (max-width: 525px) {
   .linkToGallery {
@@ -1710,7 +1722,7 @@ footer {
   align-items: center;
   z-index: 700; }
   .burgerWrapper:hover, .burgerWrapper:active {
-    background-color: #1a1919; }
+    background-color: #3f3e3e; }
 
 .bar1,
 .bar2,
@@ -1726,7 +1738,8 @@ footer {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-8px, 7px);
   -ms-transform: rotate(-45deg) translate(-8px, 7px);
-  transform: rotate(-45deg) translate(-8px, 7px); }
+  transform: rotate(-45deg) translate(-8px, 7px);
+  background-color: whitesmoke; }
 
 .change .bar2 {
   opacity: 0; }
@@ -1734,7 +1747,8 @@ footer {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   -ms-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: whitesmoke; }
 
 #burgerMenu {
   position: fixed;
@@ -1746,8 +1760,9 @@ footer {
   max-width: 300px;
   padding: 50px;
   padding-top: 125px;
-  background: black;
+  background: rgba(0, 0, 0, 0.85);
   color: #EED39B;
+  color: whitesmoke;
   opacity: 1;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
