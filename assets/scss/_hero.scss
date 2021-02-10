@@ -124,6 +124,49 @@
     }
 }
 
+// .linkToGallery {
+//     display: none;
+//     position: absolute;
+//     bottom: $triple-offset;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     font-size: 1.5rem;
+//     align-items: center;
+//     // cursor: pointer;
+//     z-index: 500;
+//     // background-color: rgba(0, 0, 0, 0.5);
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     height: auto;
+//     a {
+//         // background-color: rgba(0, 0, 0, 0.5);
+//         // width: auto;
+//         // height: auto;
+//         font-family: $forth-font;
+//         color: $soft-color;
+//     }
+//     button {
+//         padding: 10px 40px;
+//         border-radius: 10px;
+//         background-color: #576927;
+//         border: none;
+//         font-size: 1.3rem;
+//         border: 1px solid transparent;
+//         &:active {
+//             transform: translateY(3px);
+//             background-color: #495820;
+//         }
+//         &:hover {
+//             background-color: #495820;
+//             border: 1px solid $soft-color;
+//         }
+//     }
+
+//     @include media('>phone', '<=525px') {
+//         display: block;
+//     }
+// }
 .linkToGallery {
     display: none;
     position: absolute;
@@ -139,35 +182,26 @@
     padding-top: 10px;
     padding-bottom: 10px;
     height: auto;
-    a {
-        // background-color: rgba(0, 0, 0, 0.5);
-        // width: auto;
-        // height: auto;
-        font-family: $forth-font;
-        color: $soft-color;
-    }
     button {
-        padding: 10px 40px;
-        border-radius: 10px;
-        background-color: #576927;
+        // padding: 10px 40px;
+        width: 200px;
+        padding: 0 0;
+        // border-radius: 10px;
         border: none;
         font-size: 1.3rem;
         border: 1px solid transparent;
         &:active {
             transform: translateY(3px);
-            background-color: #495820;
-        }
-        &:hover {
-            background-color: #495820;
-            border: 1px solid $soft-color;
         }
     }
-
+    button img {
+        display: block;
+        width: 100%;
+    }
     @include media('>phone', '<=525px') {
         display: block;
     }
 }
-
 
 
 #slides-aux {

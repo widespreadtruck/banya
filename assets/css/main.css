@@ -358,24 +358,19 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   height: auto; }
-  .linkToGallery a {
-    font-family: "izhitsaCyrillic", arial;
-    color: #EED39B; }
   .linkToGallery button {
-    padding: 10px 40px;
-    border-radius: 10px;
-    background-color: #576927;
+    width: 200px;
+    padding: 0 0;
     border: none;
     font-size: 1.3rem;
     border: 1px solid transparent; }
     .linkToGallery button:active {
       -webkit-transform: translateY(3px);
       -ms-transform: translateY(3px);
-      transform: translateY(3px);
-      background-color: #495820; }
-    .linkToGallery button:hover {
-      background-color: #495820;
-      border: 1px solid #EED39B; }
+      transform: translateY(3px); }
+  .linkToGallery button img {
+    display: block;
+    width: 100%; }
 
 @media (min-width: 301px) and (max-width: 525px) {
   .linkToGallery {
