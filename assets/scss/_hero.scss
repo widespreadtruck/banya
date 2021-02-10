@@ -169,7 +169,7 @@
 // }
 .linkToGallery {
     display: none;
-    position: fixed;
+    position: absolute;
     bottom: $triple-offset;
     left: 0;
     right: 0;
@@ -179,8 +179,8 @@
     // cursor: pointer;
     z-index: 500;
     // background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
     height: auto;
     button {
         background-color: transparent;
