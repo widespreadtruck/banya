@@ -345,7 +345,7 @@ p {
 
 .linkToGallery {
   display: none;
-  position: absolute;
+  position: fixed;
   bottom: 6rem;
   left: 0;
   right: 0;
@@ -359,6 +359,7 @@ p {
   padding-bottom: 10px;
   height: auto; }
   .linkToGallery button {
+    background-color: transparent;
     width: 200px;
     padding: 0 0;
     border: none;
